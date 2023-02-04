@@ -1,6 +1,9 @@
-<img src="https://github.com/brunoleomenezes/ararajuba/blob/main/ararajuba.jpg" style="width:200px; height:200px;">
 
 # ararajuba
+<img src="https://github.com/brunoleomenezes/ararajuba/blob/main/ararajuba.jpg" style="width:200px; height:200px;">
+
+------------------------------------------------------------------------------
+
 The Ararajubaba script analyzes schema differences between partitioned Optimized Row Columnar in the Hadoop Distributed File System.
 
 Developed by Bruno Leonardo Santos Menezes.

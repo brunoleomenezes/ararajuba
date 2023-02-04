@@ -1,4 +1,4 @@
-<img src="https://github.com/brunoleomenezes/ararajuba/blob/main/ararajuba.jpg" style="width:200px; height:100px;">
+<img src="https://github.com/brunoleomenezes/ararajuba/blob/main/ararajuba.jpg" style="width:200px; height:400px;">
 
 # ararajuba
 The Ararajubaba script analyzes schema differences between partitioned Optimized Row Columnar in the Hadoop Distributed File System.

@@ -1,11 +1,30 @@
 # ararajuba
-The Ararajubaba script analyzes schema differences between partitioned Optimized Row Columnar tables in the Hadoop Distributed File System.
+The Ararajubaba script analyzes schema differences between partitioned Optimized Row Columnar in the Hadoop Distributed File System.
 
-Developed by Bruno Leonardo Santos Menezes. www.menezesbruno.com contato@professorbrunomenezes.com.br
+Developed by Bruno Leonardo Santos Menezes.
 
+------------------------------------------------------------------------------
 
-`wget https://example.com/ararajuba.zip`
+*Installation:*
 
+1. `wget https://github.com/brunoleomenezes/ararajuba/blob/main/ararajuba.zip`.
+2. `unzip ararajuba.zip`.
+
+------------------------------------------------------------------------------
+
+*Execution examples:*
+1. `sh ararajuba.sh sh script.sh hdfs://path/database/table/` - searching from a table.
+2. `sh ararajuba.sh sh script.sh hdfs://path/database/` - searching from a database.
+
+------------------------------------------------------------------------------
+
+*Analysis:*
+
+1. The `output.txt` file contains some information about the files that were researched.
+
+2. The file output_errors.txt stores the rows of different table schemas. If the `output_errors.txt file is not empty, it means that there are differences and the message "Different patterns found, see the output_errors.txt file for more details" will be displayed. Otherwise, the message "All patterns are the same" will be displayed.
+
+------------------------------------------------------------------------------
 
 Copyright (c) [2023] [Bruno Leonardo Santos Menezes]
 

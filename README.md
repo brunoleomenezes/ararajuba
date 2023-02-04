@@ -26,6 +26,15 @@ Developed by Bruno Leonardo Santos Menezes.
 
 ------------------------------------------------------------------------------
 
+*Important:*
+
+It is good practice to remove or move the `output.txt` and `output_erros.txt` files with each new search. Examples:
+
+1. `rm output.txt`.
+2. `mv output_erros path`.
+
+------------------------------------------------------------------------------
+
 Copyright (c) [2023] [Bruno Leonardo Santos Menezes]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

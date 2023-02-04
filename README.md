@@ -34,7 +34,7 @@ Developed by Bruno Leonardo Santos Menezes.
 It is good practice to remove or move the `output.txt` and `output_erros.txt` files with each new search. Examples:
 
 1. `rm output.txt`.
-2. `mv output_erros path`.
+2. `mv output_erros.txt path`.
 
 ------------------------------------------------------------------------------
 

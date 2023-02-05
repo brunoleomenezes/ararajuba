@@ -3,23 +3,23 @@
 # Output file name
 OUTPUT_FILE="output.txt"
 
-# Directories containing ORC files
-ORC_DIRS="$(hdfs dfs -ls -R "$1" | grep "\.orc$" | awk '{print $8}' | xargs dirname | sort | uniq)"
+# Directory containing ORC files
+ORC_DIR="$1"
 
-# Loop to iterate over all ORC directories
-for dir in $ORC_DIRS; do
-    # Loop to iterate over all ORC files in the directory
-    for file in "$dir"/*.orc; do
-        # Get the file name without the full path
-        filename="$(basename "$file")"
+# Output file name
+OUTPUT_FILE="output.txt"
 
-        # Add the file name to the output file
-        echo "####################" >> "$OUTPUT_FILE"
-        echo "# File: $filename" >> "$OUTPUT_FILE"
-        echo "####################" >> "$OUTPUT_FILE"
+# Loop to iterate over all ORC files in the directory
+for file in "$ORC_DIR"/; do
+    # Get the file name without the full path
+    filename="$(basename "$file")"
 
-        # Run the hive --orcfiledump command and capture the first 10 lines
-        hive --orcfiledump "$file" | head -n 20 >> "$OUTPUT_FILE"
-    done
+    # Add the file name to the output file
+    echo "####################" >> "$OUTPUT_FILE"
+    echo "# File: $filename" >> "$OUTPUT_FILE"
+    echo "####################" >> "$OUTPUT_FILE"
+
+    # Run the command hive --orcfiledump and capture the first 10 lines
+    hive --orcfiledump "$file" | head -n 20 >> "$OUTPUT_FILE"
 done
 sh 2.sh

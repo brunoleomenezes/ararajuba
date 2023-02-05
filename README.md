@@ -4,7 +4,7 @@
 
 ------------------------------------------------------------------------------
 
-The Ararajubaba script analyzes schema differences between partitioned Optimized Row Columnar in the Hadoop Distributed File System.
+The Ararajuba script analyzes schema differences between partitioned Optimized Row Columnar in the Hadoop Distributed File System.
 
 Developed by Bruno Menezes.
 

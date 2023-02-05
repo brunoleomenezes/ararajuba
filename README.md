@@ -18,7 +18,7 @@ Developed by Bruno Menezes.
 ------------------------------------------------------------------------------
 
 *Execution examples:*
-1. `sh ararajuba.sh hdfs://path/database//table/`. 
+1. `sh ararajuba.sh hdfs://path/database/table/`. 
 
 ------------------------------------------------------------------------------
 

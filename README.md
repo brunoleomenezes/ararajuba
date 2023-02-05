@@ -26,7 +26,7 @@ Developed by Bruno Leonardo Santos Menezes.
 
 1. The `output.txt` file contains some information about the files that were researched.
 
-2. The file output_errors.txt stores the rows of different table schemas. If the `output_errors.txt` file is not empty, it means that there are differences and the message "Different patterns found, see the output_errors.txt file for more details" will be displayed. Otherwise, the message "All patterns are the same" will be displayed.
+2. The file `output_errors.txt` stores the rows of different table schemas. If the `output_errors.txt` file is not empty, it means that there are differences and the message "Different patterns found, see the output_errors.txt file for more details" will be displayed. Otherwise, the message "All patterns are the same" will be displayed.
 
 ------------------------------------------------------------------------------
 

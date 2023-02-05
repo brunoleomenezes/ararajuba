@@ -6,7 +6,7 @@
 
 The Ararajubaba script analyzes schema differences between partitioned Optimized Row Columnar in the Hadoop Distributed File System.
 
-Developed by Bruno Leonardo Santos Menezes.
+Developed by Bruno Menezes.
 
 ------------------------------------------------------------------------------
 
@@ -39,7 +39,9 @@ It is good practice to remove or move the `output.txt` and `output_erros.txt` fi
 
 ------------------------------------------------------------------------------
 
-Copyright (c) [2023] [Bruno Leonardo Santos Menezes]
+MIT License
+
+Copyright (c) 2023 Bruno Menezes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -58,6 +60,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-

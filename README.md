@@ -18,8 +18,8 @@ Developed by Bruno Menezes.
 ------------------------------------------------------------------------------
 
 *Execution examples:*
-1. `sh ararajuba.sh hdfs://path/database/` - searching from a database.
-2. `sh ararajuba.sh hdfs://path/database/table/` - searching from a table.
+1. `sh ararajuba.sh hdfs://path/database//table/`. 
+
 ------------------------------------------------------------------------------
 
 *Analysis:*

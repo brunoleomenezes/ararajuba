@@ -31,6 +31,7 @@ Developed by Bruno Menezes.
 
 `sh ararajuba.sh -count hdfs://path/database/table/ <integer>`:
 1. In the file `output_count_errors.txt` the tables that gave error in `select count (integer)`. 
+2. Integer must be an int number.
 
 ------------------------------------------------------------------------------
 

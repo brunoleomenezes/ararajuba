@@ -1,25 +1,27 @@
 #!/bin/bash
 
-# Output file name
-OUTPUT_FILE="output.txt"
+# User-provided option
+OPTION="$1"
 
 # Directory containing ORC files
-ORC_DIR="$1"
+ORC_DIR="$2"
 
 # Output file name
 OUTPUT_FILE="output.txt"
 
-# Loop to iterate over all ORC files in the directory
-for file in "$ORC_DIR"/; do
-    # Get the file name without the full path
-    filename="$(basename "$file")"
+# Check the option provided by the user
+case "$OPTION" in
+  "-schema")
+    # Run ararajuba.sh file
+    ./1.sh "$ORC_DIR"
+    ;;
+  "-count")
+    # Run 5.sh file
+    ./5.sh "$ORC_DIR"
+    ;;
+  *)
+    echo "Invalid option provided"
+    exit 1
+    ;;
+esac
 
-    # Add the file name to the output file
-    echo "####################" >> "$OUTPUT_FILE"
-    echo "# File: $filename" >> "$OUTPUT_FILE"
-    echo "####################" >> "$OUTPUT_FILE"
-
-    # Run the command hive --orcfiledump and capture the first 10 lines
-    hive --orcfiledump "$file" | head -n 20 >> "$OUTPUT_FILE"
-done
-sh 2.sh

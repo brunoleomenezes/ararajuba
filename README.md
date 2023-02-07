@@ -30,7 +30,7 @@ Developed by Bruno Menezes.
 2. The file `output_errors.txt` stores the rows of different table schemas. If the `output_errors.txt` file is not empty, it means that there are differences and the message "Different patterns found, see the output_errors.txt file for more details" will be displayed. Otherwise, the message "All patterns are the same" will be displayed.
 
 `sh ararajuba.sh -count hdfs://path/database/table/ <integer>`:
-1. In the file `output_count_errors.txt` the tables that gave error in select count (integer).
+1. In the file `output_count_errors.txt` the tables that gave error in `select count (integer)`. 
 
 ------------------------------------------------------------------------------
 

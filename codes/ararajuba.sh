@@ -6,6 +6,9 @@ OPTION="$1"
 # Directory containing ORC files
 ORC_DIR="$2"
 
+# Number provided by the user
+NUMBER="$3"
+
 # Output file name
 OUTPUT_FILE="output.txt"
 
@@ -13,15 +16,14 @@ OUTPUT_FILE="output.txt"
 case "$OPTION" in
   "-schema")
     # Run ararajuba.sh file
-    ./1.sh "$ORC_DIR"
+    sh 1.sh "$ORC_DIR"
     ;;
   "-count")
     # Run 5.sh file
-    ./5.sh "$ORC_DIR"
+    sh 5.sh "$ORC_DIR" "$NUMBER"
     ;;
   *)
     echo "Invalid option provided"
     exit 1
     ;;
 esac
-

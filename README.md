@@ -11,8 +11,16 @@ Developed by Bruno Menezes.
 
 *Installation:*
 
-1. `wget https://github.com/brunoleomenezes/ararajuba/blob/main/ararajuba.zip`.
-2. `unzip ararajuba.zip`.
+1. Go to the repository you want to clone on GitHub.
+2. Click the "Clone" button in the top-right corner of the repository page.
+3. Copy the URL displayed in the "Clone with HTTPS" section.
+4. Open a terminal window on your computer.
+5. Navigate to the directory where you want to clone the repository.
+6. Type the following command, replacing "URL" with the URL you copied in step 3:
+`git clone URL`.
+7. Press "Enter". The repository will be cloned to your computer.
+
+
 
 ------------------------------------------------------------------------------
 
